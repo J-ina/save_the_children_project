@@ -1,0 +1,119 @@
+footer {
+  width: 100%; height: 30vh;
+  background-color: var(--bg-gray);
+}
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: var(--width-min); height: 100%;
+  padding: var(--space-L) var(--space-S);
+  margin: auto;
+}
+
+/* left */
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.fnb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: var(--font-bold);
+  line-height: 40px;
+}
+.fnb > li:hover {color: var(--color-sub);}
+
+.footer_info {
+  font-size: var(--font-size-XS);
+  color: var(--color-gray);
+}
+.footer_info > b {
+  display: block;
+  line-height: 2.3;
+}
+.footer_info > p {
+  float: left;
+  margin-right: var(--space-M);
+  line-height: 1.6;
+}
+
+.copy {color: var(--color-gray);}
+
+/* right */
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.sites_wrap {
+  float: right;
+  position: relative;
+}
+.sites_btn {
+  width: 180px; height: 40px;
+  margin-left: var(--space-XS);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  color: var(--color-gray);
+  text-align: left;
+  text-indent: var(--space-XS);
+}
+.sites_btn > i {
+  float: right;
+  margin-right: var(--space-XS);
+}
+.sites_btn:hover {
+  background-color: var(--color-white);
+  color: #bbb;
+}
+
+.links {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  right: 0; bottom: 39px;
+  height: 350px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  line-height: 2;
+}
+.family_links {
+  width: 400px;
+  padding: 0 var(--space-S);
+}
+.family_links > li {
+  position: relative;
+  padding: var(--space-S) 0;
+  border-bottom: 1px solid var(--color-lightgray);
+}
+.family_links > li:last-child {border-bottom: 0;}
+.family_links b {
+  position: absolute;
+  top: var(--space-S); left: var(--space-XS);
+}
+.family_links ul {
+  position: relative;
+  left: 150px;
+  width: 180px;
+}
+.global_links {
+  width: 180px;
+  padding: var(--space-XS) var(--space-S);
+}
+
+.family_links ul > li:hover,
+.global_links > li:hover {color: var(--color-main);}
+
+/* sns */
+.sns img {
+  display: block;
+  float: right;
+  width: 40px; height: 40px;
+  margin-left: var(--space-S);
+}
+.sns img:hover {opacity: 0.8;}
