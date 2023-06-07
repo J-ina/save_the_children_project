@@ -13,7 +13,7 @@ nav {
 }
 
 /* logo */
-.logo {width: 15%; height: fit-content;}
+.logo {width: 15%;}
 .logo img {
   width: 100%;
   object-fit: contain;
