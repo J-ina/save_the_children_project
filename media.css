@@ -74,6 +74,15 @@
   }
   /* main_banner */
   #main_banner {height: auto;}
+  .prev_btn, .next_btn {
+    display: block;
+    position: absolute;
+    z-index: 990;
+    top: 50%;
+    padding: 30px;
+  }
+  .prev_btn {left: 10px;}
+  .next_btn {right: 10px;}
   .banner_wrap {
     height: 70vw;
     margin-top: 140px;
@@ -180,14 +189,7 @@
     height: 100vh;
     margin-bottom: var(--space-section);
   }
-  .prev_btn, .next_btn {
-    display: block;
-    position: absolute;
-    z-index: 990;
-    top: 50%;
-  }
-  .prev_btn {left: 10px;}
-  .next_btn {right: 10px;}
+  .prev_btn, .next_btn {padding: 10px;}
   .banner_wrap {
     height: 100%;
     margin-top: 50px;
