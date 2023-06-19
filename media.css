@@ -118,7 +118,7 @@
     padding: 0;
   }
   .video_title {display: none;}
-  .video_title.on + .video {width: 100%; height: 100%;}
+  .video_title.active + .video {width: 100%; height: 100%;}
   /* mini_banner */
   #mini_banner {height: auto;}
   .mini_banner_box {width: 50%; padding: 5%;}
@@ -176,9 +176,18 @@
   header .icon {width: 30%;}
   /* main_banner */
   #main_banner {
+    position: relative;
     height: 100vh;
     margin-bottom: var(--space-section);
   }
+  .prev_btn, .next_btn {
+    display: block;
+    position: absolute;
+    z-index: 990;
+    top: 50%;
+  }
+  .prev_btn {left: 10px;}
+  .next_btn {right: 10px;}
   .banner_wrap {
     height: 100%;
     margin-top: 50px;
@@ -234,9 +243,9 @@
     left: unset;
     color: var(--color-black);
   }
-  .campaign_title > li.on {background-color: transparent;}
-  .campaign_title > li.on > h3 {color: var(--color-main);}
-  .campaign_title > li.on::after {display: none;}
+  .campaign_title > li.active {background-color: transparent;}
+  .campaign_title > li.active > h3 {color: var(--color-main);}
+  .campaign_title > li.active::after {display: none;}
   /* youtube */
   #youtube {display: none;}
   /* mini_banner */
